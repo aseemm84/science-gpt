@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science GPT - AI-Powered Science Learning for Indian Students</title>
-<!-- Essential Open Graph Meta Tags -->
-    <meta property="og:title" content="Science GPT - AI-Powered Science Learning for Indian Students">
-    <meta property="og:description" content="Empowering Indian students with AI-powered science education that makes learning fun, personalized, and effective">
+    <title>ScienceGPT - AI Science Tutor for Grades 1-12</title>
+    <!-- Essential Open Graph Meta Tags -->
+    <meta property="og:title" content="ScienceGPT - AI Science Tutor for Grades 1-12">
+    <meta property="og:description" content="AI-powered science learning for students in Grades 1-12, aligned with the NCERT curriculum. Features interactive lessons, video recommendations, and gamification.">
     <meta property="og:image" content="https://aseemm84.github.io/science-gpt/preview.png">
     <meta property="og:url" content="https://aseemm84.github.io/science-gpt/">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Science GPT - AI-Powered Science Learning for Indian Students">
-    <meta name="twitter:description" content="Empowering Indian students with AI-powered science education that makes learning fun, personalized, and effective">
+    <meta name="twitter:title" content="ScienceGPT - AI Science Tutor for Grades 1-12">
+    <meta name="twitter:description" content="AI-powered science learning for students in Grades 1-12, aligned with the NCERT curriculum. Features interactive lessons, video recommendations, and gamification.">
     <meta name="twitter:image" content="https://aseemm84.github.io/science-gpt/preview.png">
     
     <!-- LinkedIn specific -->
-    <meta name="description" content="Science GPT - AI-Powered Science Learning for Indian Students: Empowering Indian students with AI-powered science education that makes learning fun, personalized, and effective.">
+    <meta name="description" content="ScienceGPT - AI Science Tutor for Grades 1-12: AI-powered science learning for students in Grades 1-12, aligned with the NCERT curriculum. Features interactive lessons, video recommendations, and gamification.">
     
     <style>
         * {
@@ -111,6 +111,12 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .feature-card .feature-description {
+            flex-grow: 1;
         }
 
         .feature-card::before {
@@ -137,6 +143,7 @@
             font-size: 3.5rem;
             margin-bottom: 20px;
             display: block;
+            color: #667eea;
         }
 
         .feature-title {
@@ -230,12 +237,18 @@
 
         .header, .feature-card, .cta-section {
             animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
         }
 
         .feature-card:nth-child(1) { animation-delay: 0.1s; }
         .feature-card:nth-child(2) { animation-delay: 0.2s; }
         .feature-card:nth-child(3) { animation-delay: 0.3s; }
         .feature-card:nth-child(4) { animation-delay: 0.4s; }
+        .feature-card:nth-child(5) { animation-delay: 0.5s; }
+        .feature-card:nth-child(6) { animation-delay: 0.6s; }
+        .feature-card:nth-child(7) { animation-delay: 0.7s; }
+        .feature-card:nth-child(8) { animation-delay: 0.8s; }
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -297,10 +310,10 @@
     <section class="header">
         <div class="container">
             <div class="logo-container">
-                <div class="logo">🧠</div>
-                <h1>Science GPT</h1>
+                <div class="logo">🧪</div>
+                <h1>ScienceGPT</h1>
             </div>
-            <p class="tagline">Empowering Indian students with AI-powered science education that makes learning fun, personalized, and effective</p>
+            <p class="tagline">Your AI-powered science tutor for Grades 1-12, making learning fun, personalized, and effective.</p>
         </div>
     </section>
 
@@ -308,48 +321,61 @@
     <section class="features">
         <div class="container">
             <div class="features-grid">
-                <!-- Feature 1: NCERT Curriculum -->
+                <!-- Feature 1: Grade-Specific Curriculum -->
                 <div class="feature-card">
                     <span class="feature-icon">🎓</span>
-                    <h3 class="feature-title">NCERT Curriculum Aligned</h3>
-                    <p class="feature-description">Complete coverage of Indian science curriculum for grades 1-8, ensuring students learn exactly what they need for their exams and academic success.</p>
+                    <h3 class="feature-title">Grade-Specific Curriculum (1-12)</h3>
+                    <p class="feature-description">Covers a wide range of topics in Physics, Chemistry, and Biology tailored for each grade, fully aligned with the NCERT curriculum.</p>
                 </div>
 
                 <!-- Feature 2: Multi-language Support -->
                 <div class="feature-card">
-                    <span class="feature-icon">🌏</span>
-                    <h3 class="feature-title">10 Indian Languages Supported</h3>
-                    <p class="feature-description">Available in Hindi, English, Marathi, Gujarati, Tamil, Kannada, Telugu, Malayalam, Bengali, and Punjabi for truly inclusive learning experiences.</p>
+                    <span class="feature-icon">🌐</span>
+                    <h3 class="feature-title">Multi-language Support</h3>
+                    <p class="feature-description">Learn in English, Hindi, and several other regional Indian languages for a truly inclusive educational experience.</p>
                 </div>
 
-                <!-- Feature 3: AI-Powered Learning -->
+                <!-- Feature 3: Interactive Explanations -->
                 <div class="feature-card">
-                    <span class="feature-icon">🤖</span>
-                    <h3 class="feature-title">AI-Powered Personalized Learning</h3>
-                    <p class="feature-description">Intelligent responses tailored to each student's grade level and subject, providing personalized educational support that adapts to individual needs.</p>
+                    <span class="feature-icon">💬</span>
+                    <h3 class="feature-title">Interactive Explanations</h3>
+                    <p class="feature-description">Get clear, age-appropriate answers to your science questions, with suggestions that adapt to your learning pace.</p>
                 </div>
 
-                <!-- Feature 4: Gamification -->
+                <!-- Feature 4: AI Video Recommendations -->
+                <div class="feature-card">
+                    <span class="feature-icon">🎥</span>
+                    <h3 class="feature-title">AI-Powered Video Recommendations</h3>
+                    <p class="feature-description">Finds and summarizes the most relevant YouTube videos to provide visual and dynamic learning aids for complex topics.</p>
+                </div>
+                
+                <!-- Feature 5: Gamification -->
                 <div class="feature-card">
                     <span class="feature-icon">🎮</span>
                     <h3 class="feature-title">Gamified Learning Experience</h3>
-                    <p class="feature-description">Points, badges, streaks, and daily challenges make learning fun and engaging while tracking progress and motivating continuous improvement.</p>
+                    <p class="feature-description">Earn points, unlock badges, and maintain a learning streak. Turn studying into a fun and motivating adventure!</p>
                 </div>
-                <!-- Feature 5: Customized Suggestions -->
-                <div class="feature-card">
-                    <span class="feature-icon">🎁 </span>
-                    <h3 class="feature-title">Personalized Questions, Perfected for You</h3>
-                    <p class="feature-description">Get AI-powered question suggestions that adapt to your grade level, subject, and learning pace.</p>
-                </div>
+
                 <!-- Feature 6: Daily Challenges -->
                 <div class="feature-card">
                     <span class="feature-icon">🎯</span>
-                    <h3 class="feature-title">Fresh Science Adventures Every Day</h3>
-                    <p class="feature-description">From fun facts to mini-quizzes, our daily challenges make science discovery a rewarding daily routine that keeps students engaged and motivated.</p>
+                    <h3 class="feature-title">Daily Challenges</h3>
+                    <p class="feature-description">Tackle new facts and questions every day to build a consistent learning habit and keep your science knowledge sharp.</p>
+                </div>
+                
+                <!-- Feature 7: Progress Tracking -->
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <h3 class="feature-title">Progress Tracking</h3>
+                    <p class="feature-description">Monitor your learning journey across different subjects and topics with insightful analytics and performance metrics.</p>
                 </div>
 
-
-                
+                <!-- Feature 8: AI-Powered Learning -->
+                <div class="feature-card">
+                    <span class="feature-icon">🤖</span>
+                    <h3 class="feature-title">AI-Powered Personalized Learning</h3>
+                    <p class="feature-description">Intelligent responses tailored to each student's grade level, providing educational support that adapts to individual needs.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -379,8 +405,7 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.animationPlayState = 'running';
                     }
                 });
             }, {
@@ -388,6 +413,7 @@
             });
 
             featureCards.forEach((card) => {
+                card.style.animationPlayState = 'paused';
                 observer.observe(card);
             });
 
